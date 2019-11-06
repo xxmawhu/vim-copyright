@@ -109,11 +109,12 @@ function! <SID>SetComment(begin)
     call append(l + 4,  g:file_copyright_comment_mid_prefix."   Author        : ".expand(g:file_copyright_name))
     call append(l + 5,  g:file_copyright_comment_mid_prefix."   Email         : ".expand(g:file_copyright_email))
     call append(l + 6,  g:file_copyright_comment_mid_prefix."   File Name     : ".expand("%:t"))
-    call append(l + 7,  g:file_copyright_comment_mid_prefix."   Last Modified : ".strftime("%Y-%m-%d %H:%M"))
-    call append(l + 8,  g:file_copyright_comment_mid_prefix."   Describe      :")
-    call append(l + 9,  g:file_copyright_comment_mid_prefix)
-    call append(l + 10, g:file_copyright_comment_mid_prefix." ====================================================".g:file_copyright_comment_end)
-    call append(l + 11, "")
+    call append(l + 7,  g:file_copyright_comment_mid_prefix."   Create Time : ".strftime("%Y-%m-%d %H:%M"))
+    call append(l + 8,  g:file_copyright_comment_mid_prefix."   Last Modified : ".strftime("%Y-%m-%d %H:%M"))
+    call append(l + 9,  g:file_copyright_comment_mid_prefix."   Describe      :")
+    call append(l + 10,  g:file_copyright_comment_mid_prefix)
+    call append(l + 11, g:file_copyright_comment_mid_prefix." ====================================================".g:file_copyright_comment_end)
+    call append(l + 12, "")
 endfunction
 let s:file_copyright_head_end_line_no = 9
 
