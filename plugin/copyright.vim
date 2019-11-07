@@ -243,7 +243,7 @@ func! Title_python()
     call append(2, "\# coding style: pep8")
     call <SID>SetComment(1)
     let l = s:file_copyright_head_end_line_no + 2
-    call append(line(".") + l + 1, "")
+    " call append(line(".") + l + 1, "")
     " call append(line(".") + l + 2, "import sys")
     " call append(line(".") + l + 3, "\# import os")
 endfunc
